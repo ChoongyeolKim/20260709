@@ -1,0 +1,14 @@
+* {
+  margin: 0px;
+}
+
+#main-container {
+  background-color: aquamarine;
+  display: inline-block;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  padding: 15px;
+}

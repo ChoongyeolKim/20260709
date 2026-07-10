@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex; /* 가로 배치 */
+        justify-content: space-between;
+        gap: 20px; /* 사이 간격 */
+      }
+
+      .box {
+        width: 30%; /* 3개니까 대략 30% 씩 */
+        height: 100px;
+        background-color: skyblue;
+        font-size: 24px;
+      }
+
+      /* 화면 폭이 768 이하가 되면 실행되는 미디어 쿼리 */
+      @media screen and (max-width: 768px) {
+        body {
+          background-color: #ccc;
+        }
+        .container {
+          flex-direction: column;
+        }
+        .box {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+  </body>
+</html>

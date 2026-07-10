@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      .box1,
+      .box2,
+      .box3 {
+        width: 100px;
+        border: 1px, solid, black;
+        padding: 20px;
+        margin: 20px;
+        height: 100px;
+        border-radius: 10px;
+        box-shadow: 10px 10px lightblue;
+        box-sizing: border-box;
+      }
+      #boxContainer {
+        background-color: beige;
+        display: flex;
+        /* height: 500px; */
+        align-items: center;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="boxContainer">
+      <div class="box1">나는 박스1입니다.</div>
+      <div class="box2">나는 박스2입니다.</div>
+      <div class="box3">나는 박스3입니다.</div>
+      <div class="box1">나는 박스4입니다.</div>
+      <div class="box2">나는 박스5입니다.</div>
+      <div class="box3">나는 박스6입니다.</div>
+      <div class="box1">나는 박스7입니다.</div>
+      <div class="box2">나는 박스8입니다.</div>
+      <div class="box3">나는 박스9입니다.</div>
+    </div>
+  </body>
+</html>

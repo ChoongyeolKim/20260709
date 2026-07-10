@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>회원가입</h1>
+    <form action="/server" method="post">
+      <div>
+        <label for="username">이름</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="이름을 입력하세요"
+          value=""
+          required
+        />
+      </div>
+      <div>
+        <label for="email">이메일</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@example.com"
+        />
+      </div>
+      <div>
+        <label for="pwd">비밀번호</label>
+        <input
+          type="password"
+          name="pwd"
+          id="pwd"
+          placeholder="비밀번호를 입력하세요"
+        />
+      </div>
+      <div>
+        <p>관심분야</p>
+        <label for="ai">AI</label>
+        <input type="checkbox" name="interests" id="ai" value="ai" />
+        <label for="data">Data Analysis</label>
+        <input type="checkbox" name="interests" id="data" value="data" />
+        <label for="web">Web Development</label>
+        <input type="checkbox" name="interests" id="web" value="web" />
+      </div>
+      <div>
+        <p>회원구분</p>
+        <label for="personal">개인회원</label>
+        <input type="radio" name="acctype" id="personal" value="personal" />
+        <label for="enterprise">기업회원</label>
+        <input type="radio" name="acctype" id="enterprise" value="enterprise" />
+      </div>
+      <select name="region" id="">
+        <option value="">지역</option>
+        <option value="">----</option>
+        <option value="seoul">서울</option>
+        <option value="busan">부산</option>
+        <option value="jeju">제주</option>
+      </select>
+      <textarea name="" id=""></textarea>
+      <div>
+        <button type="submit">전송</button>
+      </div>
+    </form>
+  </body>
+</html>

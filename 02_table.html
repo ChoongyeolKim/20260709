@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테이블</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th {
+        padding: 5px;
+        background-color: aliceblue;
+      }
+      caption {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        베스트셀러
+      </caption>
+      <tr>
+        <th>순위</th>
+        <th>도서명</th>
+        <th>저자</th>
+        <th>출판사</th>
+      </tr>
+      <tr>
+        <th>1</th>
+        <td>불편한 편의점</td>
+        <td>김호연</td>
+        <td>나무옆의자</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>부자아빠 가난한 아빠</td>
+        <td>로버트 기요사키</td>
+        <td>민음사</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>달러구트 꿈 백화점</td>
+        <td>이미예</td>
+        <td>팩토리라인</td>
+      </tr>
+    </table>
+    <hr />
+    <table>
+      <caption>
+        세미나일정
+      </caption>
+      <tr>
+        <th>지역</th>
+        <th>일자</th>
+        <th>시간</th>
+        <th>장소</th>
+      </tr>
+      <tr>
+        <th rowspan="2">서울</th>
+        <td>6월 15일</td>
+        <td>14:00</td>
+        <td>코엑스 컨퍼런스 룸</td>
+      </tr>
+      <tr>
+        <td>6월 21일</td>
+        <td>14:00</td>
+        <td>당산 그랜드 센터</td>
+      </tr>
+      <tr>
+        <th>부산</th>
+        <td colspan="3">미정</td>
+      </tr>
+    </table>
+  </body>
+</html>
