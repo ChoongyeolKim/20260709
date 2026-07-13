@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,6 +41,26 @@
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td>textarea</td>
+            <td>
+              <textarea
+                name=""
+                id="textarea"
+                cols="30"
+                rows="5"
+                title="sample1"
+              ></textarea>
+            </td>
+            <td>여러 줄 입력 : textarea</td>
+            <td>
+              <ul>
+                <li>cols:가로 단위를 문자 단위로 지정</li>
+                <li>rows:세로 길이를 줄 단위로 지정</li>
+                <li>maxlength:최대 글자 수</li>
+              </ul>
+            </td>
+          </tr>
           <tr>
             <td>text</td>
             <td>
@@ -117,6 +137,41 @@
             <td>단일선택</td>
           </tr>
           <tr>
+            <td>select</td>
+            <td>
+              <select name="select" id="select" title="sample2">
+                <option value="html">html</option>
+                <option value="css">css</option>
+                <option value="javascript">javascript</option>
+              </select>
+            </td>
+            <td>드롭다운 목록 : select, option</td>
+            <td>
+              <b>select의 속성</b>
+              <ul>
+                <li>size:화면에 보여줄 드롭다운 항목의 개수</li>
+                <li>multiple:둘 이상의 항목 선택</li>
+              </ul>
+              <b>option의 속성</b>
+              <ul>
+                <li>selected:선택</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>datalist</td>
+            <td>
+              <input type="text" list="domain" title="sample3" />
+              <datalist id="domain">
+                <option value="naver.com"></option>
+                <option value="gmail.com"></option>
+                <option value="daum.net"></option>
+              </datalist>
+            </td>
+            <td>데이터 목록 : textlist, option</td>
+            <td>input의 list속성과 datafield의 id 속성을 동일하게 지정</td>
+          </tr>
+          <tr>
             <td>number</td>
             <td>
               <input type="number" min="1" max="10" step="2" title="sample7" />
@@ -145,6 +200,7 @@
                 min="2023-01-01"
                 max="2023-12-31"
                 title="sample9"
+                name="date"
               />
             </td>
             <td>연,월,일 선택</td>
