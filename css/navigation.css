@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: gold;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.logo {
+  /* background-color: aqua; */
+  font-size: 2rem;
+}
+
+.nav-menu {
+  /* background-color: tomato; */
+  display: flex;
+  list-style: none;
+  font-size: 1.5rem;
+  gap: 20px;
+}
+
+.main {
+  padding: 30px;
+  flex: 1;
+}
+
+.footer {
+  background-color: #efefef;
+  padding: 30px;
+}
